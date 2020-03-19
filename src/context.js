@@ -28,6 +28,7 @@ class RoomProvider extends Component {
                                 content_type:"payingGuestRoom"
                             });
 
+            
             let rooms = this.formatData(response.items);
             let featuredRooms = rooms.filter(room => room.featured === true);
             
